@@ -1,0 +1,74 @@
+{
+    "id": "/subscriptions/a231488d-63cb-4a86-a7de-eeb07dc65e72/resourceGroups/Custom/providers/Microsoft.CognitiveServices/accounts/CustomVisionSreya",
+    "name": "CustomVisionSreya",
+    "type": "Microsoft.CognitiveServices/accounts",
+    "etag": "\"37073b8a-0000-0100-0000-63e2362c0000\"",
+    "location": "eastus",
+    "sku": {
+        "name": "F0"
+    },
+    "kind": "CustomVision.Training",
+    "tags": {},
+    "properties": {
+        "endpoint": "https://customvisionsreya.cognitiveservices.azure.com/",
+        "internalId": "7eca64c3e6ed4849b54de8ef3de30509",
+        "dateCreated": "2023-02-07T11:29:44.8308217Z",
+        "callRateLimit": {
+            "rules": [
+                {
+                    "key": "vision.recognizeText",
+                    "renewalPeriod": 1,
+                    "count": 2,
+                    "matchPatterns": [
+                        {
+                            "path": "TrainProject",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "default",
+                    "renewalPeriod": 1,
+                    "count": 10,
+                    "matchPatterns": [
+                        {
+                            "path": "*",
+                            "method": "*"
+                        }
+                    ]
+                }
+            ]
+        },
+        "isMigrated": false,
+        "customSubDomainName": "customvisionsreya",
+        "networkAcls": {
+            "defaultAction": "Allow",
+            "virtualNetworkRules": [],
+            "ipRules": []
+        },
+        "privateEndpointConnections": [],
+        "publicNetworkAccess": "Enabled",
+        "capabilities": [
+            {
+                "name": "CustomerManagedKey"
+            },
+            {
+                "name": "VirtualNetworks"
+            }
+        ],
+        "endpoints": {
+            "Custom_Vision_Training_3.1": "https://customvisionsreya.cognitiveservices.azure.com/",
+            "Custom_Vision_Training_3.2": "https://customvisionsreya.cognitiveservices.azure.com/",
+            "Custom_Vision_Training_3.3": "https://customvisionsreya.cognitiveservices.azure.com/"
+        },
+        "provisioningState": "Succeeded"
+    },
+    "systemData": {
+        "createdBy": "sreyaep656@gmail.com",
+        "createdByType": "User",
+        "createdAt": "2023-02-07T11:29:44.386343Z",
+        "lastModifiedBy": "sreyaep656@gmail.com",
+        "lastModifiedByType": "User",
+        "lastModifiedAt": "2023-02-07T11:29:44.386343Z"
+    }
+}
